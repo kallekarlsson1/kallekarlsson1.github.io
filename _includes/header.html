@@ -1,0 +1,13 @@
+<header class="site-header">
+  {% if page.url == "/" %}
+    <h1 class="site-title">{{ site.title }}</h1>
+    <p class="bio">{{ site.description }}</p>
+  {% else %}
+    <a class="site-title small" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  {% endif %}
+  <nav>
+    {% for item in site.nav %}
+      <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>
