@@ -9,10 +9,12 @@
   {% feed_meta %}
 </head>
 <body>
-{% include mountains.html %}
+  <svg class="wind" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><g class="frames"></g></svg>
+  {% include header.html %}
   <main>
-    {% include header.html %}
     {{ content }}
   </main>
+  <script src="{{ '/assets/js/wind.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/nav.js' | relative_url }}" defer></script>
 </body>
 </html>

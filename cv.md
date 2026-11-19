@@ -1,7 +1,5 @@
 ---
-layout: page
-title: CV
+layout: redirect
 permalink: /cv/
+redirect_to: /#cv
 ---
-
-Write your cv page here.

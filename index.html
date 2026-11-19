@@ -1,3 +1,17 @@
 ---
 layout: default
 ---
+<header class="hero" id="top">
+  <h1 class="site-title">{{ site.title }}</h1>
+  <p class="bio">{{ site.description }}</p>
+  <nav class="hero-nav" aria-label="Sections">
+    {% for item in site.nav %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}
+  </nav>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to About">&darr;</a>
+</header>
+
+{% include sections/about.html %}
+{% include sections/projects.html %}
+{% include sections/cv.html %}
+{% include sections/blog.html %}
+{% include sections/contact.html %}

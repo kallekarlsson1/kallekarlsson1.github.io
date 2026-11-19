@@ -1,13 +1,6 @@
-<header class="site-header">
-  {% if page.url == "/" %}
-    <h1 class="site-title">{{ site.title }}</h1>
-    <p class="bio">{{ site.description }}</p>
-  {% else %}
-    <a class="site-title small" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  {% endif %}
-  <nav>
-    {% for item in site.nav %}
-      <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
-    {% endfor %}
-  </nav>
-</header>
+<nav class="topnav{% if page.url == '/' %} is-home{% endif %}" aria-label="Site">
+  <a class="topnav-name" href="{{ '/#top' | relative_url }}">{{ site.title }}</a>
+  <div class="topnav-links">
+    {% for item in site.nav %}<a href="{{ item.url | relative_url }}" data-section="{{ item.url | remove: '/#' }}">{{ item.title }}</a>{% endfor %}
+  </div>
+</nav>

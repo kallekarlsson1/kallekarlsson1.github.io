@@ -1,18 +1,20 @@
 title: Edvin Karlsson
-description: A few sentences about who you are, what you do, and what you write about.
-url: https://kallekarlsson1.github.io
+description: Engineering Mathematics student at Chalmers and EPFL.
+url: https://edvinkarlsson.com
 baseurl: ""
 
-# Links shown under the bio and at the top of every page
+# Sections of the one-page home page, shown in the nav (url must be /#<section id>)
 nav:
-  - title: Blog
-    url: /blog/
+  - title: About
+    url: /#about
   - title: Projects
-    url: /projects/
+    url: /#projects
   - title: CV
-    url: /cv/
+    url: /#cv
+  - title: Blog
+    url: /#blog
   - title: Contact
-    url: /contact/
+    url: /#contact
 
 permalink: /blog/:year/:month/:day/:title/
 markdown: kramdown

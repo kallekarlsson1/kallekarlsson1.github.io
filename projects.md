@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Projects
+layout: redirect
 permalink: /projects/
+redirect_to: /#projects
 ---
-
-Write your projects page here.

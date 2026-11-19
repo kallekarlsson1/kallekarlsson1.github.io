@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Contact
+layout: redirect
 permalink: /contact/
+redirect_to: /#contact
 ---
-
-Write your contact page here.
